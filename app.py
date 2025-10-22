@@ -12,6 +12,7 @@ def home():
     # sessões ficam no cookies
     if "username" in session:
         return render_template('home.html', username=session['username'])
+
     return redirect(url_for('login'))
 
 #
